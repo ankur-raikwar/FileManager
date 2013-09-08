@@ -17,7 +17,7 @@
             android:title="@string/pref_twitter" >
             <intent
                 android:action="android.intent.action.VIEW"
-                android:data="http://m.twitter.com/StatixnetX" />
+                android:data="http://twitter.com/ankur850" />
         </PreferenceScreen>
         <PreferenceScreen
             android:summary="@string/pref_website_desc"
