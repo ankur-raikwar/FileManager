@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/actionselect"
+        android:icon="@drawable/multi"
+        android:showAsAction="ifRoom"
+        android:title="@string/selectall"/>
+    <item
+        android:id="@+id/shortcut"
+        android:showAsAction="never"
+        android:title="@string/shortcut"/>
+    <item
+        android:id="@+id/deleteapps"
+        android:showAsAction="never"
+        android:title="@string/deleteapps"/>
+
+</menu>

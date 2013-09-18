@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory android:title="@string/uisettings" >
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="displayhiddenfiles"
+            android:title="@string/hiddenfiles" />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="showpreview"
+            android:title="@string/showpreview" />
+
+        <ListPreference
+            android:defaultValue="1"
+            android:entries="@array/sortentries"
+            android:entryValues="@array/sortvalues"
+            android:key="sort"
+            android:title="@string/sort" />
+        <ListPreference
+            android:defaultValue="1"
+            android:entries="@array/viewentries"
+            android:entryValues="@array/viewvalues"
+            android:key="viewmode"
+            android:title="@string/viewmode" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/searchprefs" >
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="enablesearchsuggestions"
+            android:title="@string/enablesearchsuggestions" />
+
+        <com.ankur.coreutils.ClearSearchSuggestions
+            android:defaultValue="true"
+            android:dependency="enablesearchsuggestions"
+            android:key="clearsearch"
+            android:title="@string/deletesearchsuggestions" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/advancedsettings" >
+        <EditTextPreference
+            android:dialogTitle="@string/defaultdir"
+            android:key="defaultdir"
+            android:title="@string/defaultdir" />
+
+        <Preference
+            android:key="editbookmarks"
+            android:title="@string/bookmark" />
+    </PreferenceCategory>
+
+    <PreferenceScreen android:title="@string/xdaforum" >
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="http://forum.xda-developers.com/showthread.php?t=2330864" >
+        </intent>
+    </PreferenceScreen>
+
+</PreferenceScreen>
